@@ -7,9 +7,7 @@ DEFAULT_PANE=0
 
 WORKSPACE="~"
 declare -a WINDOWS=(
-  [1]="bash;$WORKSPACE;;" # a window with one panel
-  [2]="fluks;$WORKSPACE;cd /opt/si/flux-de-travail && pew in fluks python -m ticker;cd /opt/si/flux-de-travail && pew in fluks python -m feeder" # a window with two panels
-  [3]="red-october;$WORKSPACE;cd /opt/si/red-october && python3 -m pew in redoctober uvicorn redoctober.app:app --debug --proxy-headers;cd /opt/si/red-october && npm run watch"
-  [4]="ws2;$WORKSPACE;cd /opt/si/ws2 && poetry run python src/ws/freepro/main.py;cd /opt/si/red-october/quasar && fnm exec quasar dev -m ssr"
-  [5]="logs;$WORKSPACE;reset && sudo journalctl -n 1 -f SYSLOG\_IDENTIFIER=WS-LOG SYSLOG\_FACILITY=22 | ccze -A"
+  [1]="window 1;$WORKSPACE;;" # a window with one panel
+  [2]="window 2;$WORKSPACE;echo panel 1;echo panel 2" # a window with two panels
+  [3]="window 3;$WORKSPACE;echo panel 1;echo panel 2;echo panel 3" # a window with three panels
 )
